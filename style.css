@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+	--gray: #555B6E;
+	--blue: #89B0AE;
+    --green: #BEE3DB;
+	--white: #FAF9F9;
+	--apricot: #FFD6E0;
+    --box-shadow: 0 .5rem 1rem rgb(0,0,0,.1);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    text-decoration: none;
+}
+
+header {
+	position: fixed;
+    top:0; left:0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--gray);
+    box-shadow: var(--box-shadow);
+    padding: 0 7%;
+}
+
+header .logo{
+    color:var(--white);
+    font-size: 16px;
+}
+
+header nav ul {
+	list-style: none;
+}
+
+header nav ul li {
+	position: relative;
+	float: left;
+}
+
+header nav ul li a {
+    font-size: 24px;
+    padding: 20px 30px;
+    color:var(--white);
+    display: block;
+}
+
+header nav ul li a:hover{
+    color:var(--gray);
+    background: var(--white);
+}
+
+header nav ul li ul {
+	position: absolute;
+	left: 0;
+	width: 200px;
+	background: var(--gray);
+	display: none;
+}
+
+header nav ul li ul li {
+	width: 100%;
+	border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+header nav ul li:focus-within > ul,
+header nav ul li:hover > ul {
+	display: initial;
+}
+
+.home {
+    background-color: var(--green);
+    min-height: 100vh;
+    background-position: center;
+	background-size: cover;
+}
+
+.home h1 {
+    padding: 217px 670px 0px 100px;
+    font-weight: bold;
+	font-size: 4rem;
+}   
+
+.home p {
+    padding: 5px 700px 100px 100px;
+	color: black;
+	text-align: left;
+    font-size: 19px;
+}
+
+.signup {
+    margin-top: 20px;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.signup .container {
+    border-radius: 8px;
+    background-color: var(--white);
+    width: 50%;
+}
+
+.head {
+    background-color: var(--gray);
+    padding: 30px 0;
+}
+
+.head h1 {
+    color: var(--white);
+    text-align: center;
+}
+
+form {
+    padding: 40px;
+}
+
+.input {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.input label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.input input {
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+}
+
+.radio {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.radio p{
+    padding-bottom: 5px;
+}
+
+.radio input {
+    display: block;
+}
+
+form .button {
+    background-color: var(--gray);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    display: block;
+    font-size: 16px;
+    padding: 12px 0;
+    margin-top: 15px;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+}
+
+form .button:hover {
+    background-color: var(--apricot);
+    color: black;
+}
